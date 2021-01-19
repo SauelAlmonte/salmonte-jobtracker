@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/liber8.ico">
+    <link rel="stylesheet" href="dist/tailwind.css">
+    <title>Contact</title>
+</head>
+
+<style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type=submit] {
+        background-color: #3730A2;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="flex items-center justify-between px-6 py-6 mx-auto bg-indigo-900 border-4 border-yellow-400 rounded-md">
+            <a class="pl-6 text-2xl font-bold text-white lg:text-4xl" href="index.html">
+                Libre
+            </a>
+            <div class="block lg:hidden">
+                <button class="flex items-center px-3 py-2 text-yellow-400 border border-yellow-400 rounded appearance-none hover:text-yellow-300 hover:border-yellow-300 focus:outline-none">
+                <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+                </button>
+            </div>
+            <div class="hidden lg:block">
+                <ul class="inline-flex text-white">
+                    <li><a class="px-4 hover:underline hover:text-yellow-400" href="/">Home</a></li>
+                    <li><a class="px-4 hover:underline hover:text-yellow-400" href="/">Job Seekers</a></li>
+                    <li><a class="px-4 hover:underline hover:text-yellow-400" href="/">Employers</a></li>
+                    <li><a class="px-4 hover:underline hover:text-yellow-400" href="#">About</a></li>
+                    <li><a class="px-4 hover:underline hover:text-yellow-400" href="contact.html">Contact</a></li>
+                    <li><a class="px-4 font-bold hover:underline hover:text-yellow-400" href="user-loginpg.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Contact Us Form -->
+<div class="container p-2 align-middle">
+    <h4 class="p-2 text-xl font-bold text-indigo-900">
+        Contact Us
+    </h4>
+
+    <form action="action_page.php">
+
+        <label for="name" class="p-2 text-indigo-900"> Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name..">
+
+        <label for="email" class="p-2 text-indigo-900">Email Address</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email">
+
+        <label for="subject" class="p-2 text-indigo-900">Subject</label>
+        <input type="text" id="subject" name="subject">
+
+        <label for="content" class="p-2 text-indigo-900">Content</label>
+        <textarea id="content" name="content" style="height:200px"></textarea>
+
+        <a href="index.html" class="p-2 font-bold text-white bg-indigo-900 border-2 border-yellow-400 rounded-md text-1xl hover:bg-indigo-600">Submit</button></a>
+
+    </form>
+</div>
+
+<footer class="text-indigo-800 bg-indigo-900 border-4 border-yellow-400">
+    <div class="px-6 pt-10 pb-6 mx-auto md:container">
+        <div class="flex flex-wrap">
+            <div class="w-full text-center md:w-1/4 md:text-left">
+                <h5 class="mb-6 font-bold text-white uppercase">Links</h5>
+                <ul class="mb-4">
+                    <li class="mt-2">
+                    <a href="#" class="text-white hover:underline hover:text-yellow-400">FAQ</a>
+                    </li>
+                    <li class="mt-2">
+                    <a href="#" class="text-white hover:underline hover:text-yellow-400">Help</a>
+                    </li>
+                    <li class="mt-2">
+                    <a href="#" class="text-white hover:underline hover:text-yellow-400">Support</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full text-center md:w-1/4 md:text-left">
+                <h5 class="mb-6 font-bold text-white uppercase">Legal</h5>
+                <ul class="mb-4">
+                    <li class="mt-2">
+                    <a href="#" class="text-white hover:underline hover:text-yellow-400">Terms</a>
+                    </li>
+                    <li class="mt-2">
+                    <a href="#" class="text-white hover:underline hover:text-yellow-400">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full text-center md:w-1/4 md:text-left">
+                <h5 class="mb-6 font-bold text-white uppercase">Social</h5>
+                <ul class="mb-4">
+                    <li class="mt-2">
+                    <a href="#" class="text-white hover:underline hover:text-yellow-400">Facebook</a>
+                    </li>
+                    <li class="mt-2">
+                    <a href="#" class="text-white hover:underline hover:text-yellow-400">Linkedin</a>
+                    </li>
+                    <li class="mt-2">
+                    <a href="#" class="text-white hover:underline hover:text-yellow-400">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full text-center md:w-1/4 md:text-left">
+                <h5 class="mb-6 font-bold text-white uppercase">Company</h5>
+                <ul class="mb-4">
+                    <li class="mt-2">
+                    <a href="#" class="text-white hover:underline hover:text-yellow-400">Official Blog</a>
+                    </li>
+                    <li class="mt-2">
+                    <a href="#" class="text-white hover:underline hover:text-yellow-400">About Us</a>
+                    </li>
+                    <li class="mt-2">
+                    <a href="contact.html" class="text-white hover:underline hover:text-yellow-400">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    
+</script>
+</body>
+</html>

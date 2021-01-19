@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/liber8.ico">
+    <link rel="stylesheet" href="dist/tailwind.css">
+    <title>Login</title>
+</head>	
+<body>
+    
+        <form id="registration-form">
+            <div class="flex items-center justify-center h-screen bg-blue-400">
+        
+            <div class="w-1/3 p-6 bg-white rounded shadow-lg" id="my-form">
+
+            <div class="container">
+                <h1>User Login Page</h1>
+                <p class="font-bold text-indigo-900">Please login to continue your journey with Liber!</p>
+                <hr>
+        
+
+            <div class="my-4 ml-10 text-indigo-900">
+                <label for=""
+                class="mb-2 text-indigo-900"><b>Login Name</b></label>
+                <input type="text" id="account-name" name="account-name" placeholder="Enter login name"
+                    class="block border border-black base-input border-3"
+                >
+                <small class="hidden">Please confirm your login</small>
+                <small class="hidden">Success!</small>
+            </div>
+
+            <div class="my-4 ml-10">
+                <label for="password"
+                class="mb-2 text-indigo-900"><b>Password</b></label>
+                <input type="text" id="password" name="password" placeholder="Please create a password"
+                    class="block border border-black base-input border-3"
+                >
+                <small class="hidden">Please create a password</small>
+                <small class="hidden">Success!</small>
+            </div>
+        
+
+        <div class="my-4 ml-10">
+            <label for=""
+            class="mb-2 text-indigo-900"><b>Please reenter password</b></label>
+            <input type="text" id="password2" name="password2" placeholder="Please confirm password"
+                class="block border border-black base-input border-3"
+            >
+            <small class="hidden">Please reenter password</small>
+            <small class="hidden">Success!</small>
+        </div>
+
+        <a href="user-login.html"
+        class="p-2 font-bold text-white bg-indigo-900 rounded-md text-1xl hover:bg-indigo-600">Register</button></a>
+
+        </div>
+
+    </form>
+      <script src="app.js"></script>
+</body>
+  
+</body>
+</html>
