@@ -8,8 +8,8 @@ module.exports = {
       colors: { 
         transparent: 'transparent',
         current: 'currentColor',
-   'blue-gray': colors.blueGray,
-   'cool-gray': colors.coolGray,
+        'blue-gray': colors.blueGray,
+        'cool-gray': colors.coolGray,
         gray: colors.gray,
         'true-gray': colors.trueGray,
         'warm-gray': colors.warmGray,
