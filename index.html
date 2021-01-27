@@ -7,70 +7,69 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="img/liber8.ico">
     <link rel="stylesheet" href="dist/tailwind.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Liber Home</title>
+    <title>Liber</title>
 </head>
 
-<body>
+<body class="p-0 m-0 bg-cool-gray-50 antialiased">
 
-  <div class="p-0 m-0">
+  <div class="">
 
-  <!--Nav Start-->
-    <nav>
-      <div class="flex items-center justify-between px-6 py-2 mx-auto bg-indigo-800 border-2 border-teal-400">
-          <a class="pl-6 text-2xl font-bold text-blue-gray-100 lg:text-4xl" href="index.html">
-              Libre
-          </a>
-          <div class="block lg:hidden">
-              <button class="flex items-center px-3 py-2 text-teal-400 border border-teal-400 rounded appearance-none hover:text-teal-500 hover:border-teal-500 focus:outline-none">
-              <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <title>Menu</title>
-                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-              </svg>
-              </button>
-          </div>
-          <div class="hidden lg:block">
-              <ul class="inline-flex text-blue-gray-100">
-                  <li><a class="px-4 hover:underline hover:text-teal-400" href="/">Home</a></li>
-                  <li><a class="px-4 hover:underline hover:text-teal-400" href="#">About Us</a></li>
-                  <li><a class="px-4 hover:underline hover:text-teal-400" href="/">Job Seekers</a></li>
-                  <li><a class="px-4 hover:underline hover:text-teal-400" href="/">Employers</a></li>
-                  <li><a class="px-4 hover:underline hover:text-teal-400" href="contact.html">Contact Us</a></li>
-                  <li><a class="px-4 font-bold hover:underline hover:text-teal-400" href="user-loginpg.html">Login</a></li>
-                  <li><a class="px-4 font-bold hover:underline hover:text-teal-400" href="new-account.html">Resgister</a></li>
-              </ul>
-          </div>
-      </div>
-  </nav>
+<!--Nav Start-->
+<header>
+    <div class="flex items-center justify-between px-6 py-2 mx-auto bg-indigo-800 border-2 border-teal-400">
+        <a class="pl-6 text-2xl font-bold text-blue-gray-100 lg:text-4xl" href="index.html">
+            Libre
+        </a>
+        <div class="block lg:hidden">
+            <button class="flex items-center px-3 py-2 text-teal-400 border border-teal-400 rounded appearance-none hover:text-teal-500 hover:border-teal-500 focus:outline-none">
+            <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+            </button>
+        </div>
+        <div class="hidden lg:block">
+            <ul class="inline-flex text-blue-gray-100">
+                <li><a class="px-4 hover:underline hover:text-teal-400" href="/">Home</a></li>
+                <li><a class="px-4 hover:underline hover:text-teal-400" href="#">About Us</a></li>
+                <li><a class="px-4 hover:underline hover:text-teal-400" href="/">Job Seekers</a></li>
+                <li><a class="px-4 hover:underline hover:text-teal-400" href="/">Employers</a></li>
+                <li><a class="px-4 hover:underline hover:text-teal-400" href="contact.html">Contact Us</a></li>
+                <li><a class="px-4 font-bold hover:underline hover:text-teal-400" href="login.html">Login</a></li>
+                <li><a class="px-4 font-bold hover:underline hover:text-teal-400" href="new-account.html">Resgister</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
 
 <!--Nav End-->
 
 <!-- Hero Start -->
 
-  <div class="flex flex-col h-screen bg-center bg-no-repeat bg-cover bg-local" style="background-image: url(img/new/wb-bg7-cool.jpg)">
-      <div class="flex justify-center px-10 py-8 m-20 mx-48 text-center display:hidden">
-          <h1 class="text-5xl font-black text-blue-gray-100 italic tracking-normal leading-normal ordinal">The most inovating opportunities in Coding, Available to you, At Once!</h2>
-      </div>
-      
-      <form id="search-form" class="flex justify-center w-auto max-w-3xl px-4 mx-auto space-x-12 text-gray-600 rounded inputs" action="results.html">
-          
-          
-          <div>
-              <input class="w-full px-4 py-2 mr-16 tracking-normal border-2 border-teal-400 rounded-lg text-sm focus:outline-none focus:border-teal-600" placeholder="Job Title, Company, or Keywords" type="text" id="keyword-search" />
-          </div>
+<div class="flex flex-col h-screen bg-center bg-no-repeat bg-cover bg-local" style="background-image: url(img/new/wb-bg7-cool.jpg)">
+    <div class="flex justify-center px-36 py-10 m-20 text-center container mx-auto">
+        <h1 class="text-5xl font-black text-blue-gray-50 italic tracking-normal leading-normal ordinal">Inovating opportunities in Coding, Available to you, At Once!</h2>
+    </div>
+    
+    <form id="search" class="flex justify-center container mx-auto px-4 space-x-12 text-indigo-800 inputs" action="results.html">
+        
+        
+        <div>
+            <input class="w-full px-4 py-2 mr-16 tracking-normal border-2 border-teal-400 rounded-lg text-sm focus:outline-none focus:border-teal-600" placeholder="Job Title, Company, or Keywords" type="text" id="keyword-search" />
+        </div>
 
-          <div>
-              <input class="w-full px-4 py-2 mr-16 tracking-normal border-2 border-teal-400 rounded-lg text-sm focus:outline-none focus:border-teal-600" placeholder="City, State, or Zip" type="text" id="location-search" />
-          </div>
-          
-          <div>
-              <button id="search" class="flex px-6 py-2 font-bold text-center text-blue-gray-100 bg-indigo-800 border-2 border-teal-400 rounded-lg text-sm hover:bg-indigo-800"><a href="#">Search </a></button>
-          </div>        
+        <div>
+            <input class="w-full px-4 py-2 mr-16 tracking-normal border-2 border-teal-400 rounded-lg text-sm focus:outline-none focus:border-teal-600" placeholder="City, State, or Zip" type="text" id="location-search" />
+        </div>
+        
+        <div>
+            <button id="search" class="flex px-6 py-2 font-bold text-center text-blue-gray-50 bg-indigo-800 border-2 border-teal-400 rounded-lg text-sm hover:bg-indigo-800"><a href="#">Search </a></button>
+        </div>        
 
-      </form>
-  </div>
+    </form>
+</div>
 
-  <hr>
+<hr>
 <!--Hero End-->
 
 <!--Filter Start-->
@@ -79,16 +78,16 @@
             
   <div class="flex flex-1">
       
-      <div class="flex flex-col justify-between p-6 text-center md:w-56 sm:text-left bg-cool-gray-100">
+      <div class="flex flex-col justify-between p-6 text-center md:w-56 sm:text-left">
           <form action="/action_page.php">
               <h1 class="text-base font-bold text-indigo-800">Sort by</h1>
-              <select name="sort-by" id="sort-by" class="p-1 text-base font-bold text-indigo-800 border-2 border-teal-400 rounded-md hover:bg-indigo-100">
+              <select name="sort-by" id="sort-by" class="p-1 text-base  text-indigo-800 border-2 border-teal-400 rounded-md hover:bg-indigo-100">
               <option value="most-recent">Most Recent</option>
               <option value="best-match">Best Match</option>
               </select>
               <br><br>
               <h1 class="text-base font-bold text-indigo-800">Located Within</h1>
-              <select name="located-within" id="located-within" class="p-1 text-base font-bold text-indigo-800 border-2 border-teal-400 rounded-md hover:bg-indigo-100">
+              <select name="located-within" id="located-within" class="p-1 text-base  text-indigo-800 border-2 border-teal-400 rounded-md hover:bg-indigo-100">
               <option value="located-within">10 Miles</option>
               <option value="located-within">15 Miles</option>
               <option value="located-within">25 Miles</option>
@@ -97,7 +96,7 @@
               </select>
               <br><br>
               <h1 class="text-base font-bold text-indigo-800">Date Posted</h1>
-              <select name="date-posted" id="date-posted" class="p-1 text-base font-bold text-indigo-800 border-2 border-teal-400 rounded-md hover:bg-indigo-100">
+              <select name="date-posted" id="date-posted" class="p-1 text-base  text-indigo-800 border-2 border-teal-400 rounded-md hover:bg-indigo-100">
               <option value="date-posted">Anytime</option>
               <option value="date-posted">Within 1 Day</option>
               <option value="date-posted">Within 7 Day</option>
@@ -106,14 +105,14 @@
               </select>
               <br><br>
               <h1 class="text-base font-bold text-indigo-800">Companies</h1>
-              <select name="Companies" id="Companies" class="p-1 text-base font-bold text-indigo-800 border-2 border-teal-400 rounded-md hover:bg-indigo-100">
+              <select name="Companies" id="Companies" class="p-1 text-base text-indigo-800 border-2 border-teal-400 rounded-md hover:bg-indigo-100">
               <option value="Companies">Facebook</option>
               <option value="Companies">Microsoft</option>
               <option value="Companies">Dell</option>
               </select>
               <br><br>
               <h1 class="text-base font-bold text-indigo-800">Position Level</h1>
-              <select name="position-level" id="position-level" class="p-1 text-base font-bold text-indigo-800 border-2 border-teal-400 rounded-md hover:bg-indigo-100">
+              <select name="position-level" id="position-level" class="p-1 text-base  text-indigo-800 border-2 border-teal-400 rounded-md hover:bg-indigo-100">
               <option value="position-level">Entry Level</option>
               <option value="position-level">Intermediate</option>
               <option value="position-level">Advanced</option>
@@ -121,142 +120,44 @@
               </select>
               <br><br><br>
               <div>
-                <button id="filter" class="px-6 py-2 font-bold text-center text-blue-gray-100 bg-indigo-800 border-2 border-teal-400 rounded-lg text-sm hover:bg-indigo-800"><a href="#">Apply Filter </a></button>
+                <button id="apply-filter" class="px-6 py-2 font-bold text-center text-blue-gray-100 bg-indigo-800 border-2 border-teal-400 rounded-lg text-sm hover:bg-indigo-800"><a href="#">Apply Filter </a></button>
             </div>  
           </form>  
       </div>
 <!--Filter end-->
 
 <!--Results start-->
-      <div class="mx-auto overflow-hidden border-2 border-teal-400 bg-cool-gray-100">
-          <div class="container p-2 px-4 overflow-hidden border-2 border-indigo-400 md:max-w-4xl">
-              <div class="py-6">
-                  <div class="text-base font-bold tracking-wide text-start text-indigo-800 uppercase">
-                     <h2>Results</h2>   
+      <div class="md:container md:mx-auto">
+          <div class="p-2 py-6 px-6  overflow-hidden container">
+              <div id="results" class="py-4 px-4 box-border md:box-content">
+                  <div class="text-lg font-bold tracking-wide text-start text-indigo-800 uppercase">
+                     Results  
                   </div>
-                      <div id="results">
-                          <br>
-                          <h1 class="mt-2 text-base text-indigo-800">
-                              Full Stack Web Developer* at Odyssey Systems
-                              Lexington, MA
-                          </h1>
-                          <div>
-                          <a href="#" class="mt-1 text-sm leading-tight text-indigo-800 hover:underline font-bold underline">Company</a> 
-                          <a href="#" class="mt-1 text-sm leading-tight text-indigo-800 hover:underline font-bold underline">Location</a>
-                          </div>
-                          <br>
-                          <p class="mt-2 text-base text-indigo-800">
-                              Our client develops and demonstrates tactically-relevant space situational awareness (SSA) in support of space control. 
-                              The client focuses on the techniques, operational concepts, and advanced sensor systems that are needed to obtain timely and predictive information about space objects. 
-                              The client is in need of a Software Programmer to aid in the development of software to support their mission
-                          </p>
-                      </div>    
+                  <br>
+                  <div>
+                      <a href="#" class="mt-2 text-base text-indigo-800 hover:underline font-bold">
+                          Full Stack Web Developer at Odyssey Systems
+                          Lexington, MA
+                      </a>
+                      <div class="mt-1 text-xs leading-tight text-indigo-800 italic">
+                        <a href="#" class="hover:underline inline-block">Company</a>
+                        <p class="inline-block">/</p> 
+                        <a href="#" class="hover:underline inline-block">Location</a>
+                      </div>
+                      <hr class="font-black">
+                      <br>
+                      <p class="mt-2 text-base text-indigo-800">
+                          Our client develops and demonstrates tactically-relevant space situational awareness (SSA) in support of space control. 
+                          The client focuses on the techniques, operational concepts, and advanced sensor systems that are needed to obtain timely and predictive information about space objects. 
+                          The client is in need of a Software Programmer to aid in the development of software to support their mission
+                      </p>
+                  </div>    
               </div>
           </div>
       </div>
   </div>
 
 <!--Results End-->
-
-<!--Carousel Start-->
-        
-  <div class="bg-indigo-800 border-2 border-teal-400 rounded-md">
-      <p class="text-3xl font-bold text-center text-blue-gray-100">
-        Find the right site for you with one of our dynamic partners!
-      </p>   
-  </div>
-  <br><br>
-<!--Slideshow container-->
-
-  <div class="border-2 border-teal-400 rounded slideshow-container">
-
-<!--Full-width images with number and caption text-->
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 4</div>
-      <img src="img/car/atomic.jpg" style="width:100%">
-      <div class="text">
-        <!-- <p class="text-sm text-indigo-900 text-1xl">
-          Caption Text
-        </p> -->
-      </div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 4</div>
-      <img src="img/car/cynexis.jpg" style="width:100%">
-      <div class="text">
-        <!-- <p class="text-sm text-indigo-900 text-1xl">
-        Caption Text
-        </p> -->
-      </div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 4</div>
-      <img src="img/car/envie.jpg" style="width:100%">
-      <div class="text">
-        <!-- <p class="text-sm text-indigo-900 text-1xl">
-          Caption Three
-        </p> -->
-      </div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">4 / 4</div>
-      <img src="img/car/foxwell.jpg" style="width:100%">
-      <div class="text">
-        <!-- <p class="text-sm text-indigo-900 text-1xl">
-          Caption Three
-        </p> -->
-      </div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">4 / 4</div>
-      <img src="img/car/google.jpg" style="width:100%">
-      <div class="text">
-        <!-- <p class="text-sm text-indigo-900 text-1xl">
-          Caption Three
-        </p> -->
-      </div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">4 / 4</div>
-      <img src="img/car/st-eng.jpg" style="width:100%">
-      <div class="text">
-        <!-- <p class="text-sm text-indigo-900 text-1xl">
-          Caption Three
-        </p> -->
-      </div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">4 / 4</div>
-      <img src="img/car/ulem.jpg" style="width:100%">
-      <div class="text">
-        <!-- <p class="text-sm text-indigo-900 text-1xl">
-          Caption Three
-        </p> -->
-      </div>
-    </div>
-
-<!--Next and previous buttons-->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
-  </div>
-  <br><br>
-
-<!--The dots/circles-->
-  <!-- <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-  </div> -->
-    
-<!--Carousel end-->
 
 <!--footer Start-->
 
@@ -323,29 +224,21 @@
     
 <!--Scripts start-->
 
-<!--Carousel Script Start-->
-    
-  <script src="carousel2.js">
-          
-  </script>
+    <script src="search.js">
+            
+    </script>
 
-<!--Carousel Script Start-->
+    <script src="results.js">
+        
+    </script>
 
-  <script src="search.js">
-          
-  </script>
+    <script src="login.js">
+        
+    </script>
 
-  <script src="results.js">
-      
-  </script>
-
-  <script src="user-login.js">
-      
-  </script>
-
-  <script src="new-account.js">
-      
-  </script>
+    <script src="new-account.js">
+        
+    </script>
 
 <!--Scripts End-->
   </div>  
