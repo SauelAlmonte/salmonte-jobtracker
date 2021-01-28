@@ -48,10 +48,10 @@
 
 <div class="flex flex-col h-screen bg-center bg-no-repeat bg-cover bg-local" style="background-image: url(img/new/wb-bg7-cool.jpg)">
     <div class="flex justify-center px-36 py-10 m-20 text-center container mx-auto">
-        <h1 class="text-5xl font-black text-blue-gray-50 italic tracking-normal leading-normal ordinal">Inovating opportunities in Coding, Available to you, At Once!</h2>
+        <h1 class="text-5xl font-black text-blue-gray-50 italic tracking-normal leading-normal ordinal">Innovating opportunities in Coding, Available to you, At Once!</h2>
     </div>
     
-    <form id="search" class="flex justify-center container mx-auto px-4 space-x-12 text-indigo-800 inputs" action="results.html">
+    <form id="search-form" class="flex justify-center container mx-auto px-4 space-x-12 text-indigo-800 inputs" action="search.js">
         
         
         <div>
@@ -63,7 +63,7 @@
         </div>
         
         <div>
-            <button id="search" class="flex px-6 py-2 font-bold text-center text-blue-gray-50 bg-indigo-800 border-2 border-teal-400 rounded-lg text-sm hover:bg-indigo-800"><a href="#">Search </a></button>
+            <button id="search-form" class="flex px-6 py-2 font-bold text-center text-blue-gray-50 bg-indigo-800 border-2 border-teal-400 rounded-lg text-sm hover:bg-indigo-800"><a href="#">Search </a></button>
         </div>        
 
     </form>
@@ -220,29 +220,24 @@
         </div>
     </div>
   </footer>
-<!--footer End-->
+
+  </div>  
+       
+  <!--footer End-->
     
 <!--Scripts start-->
 
-    <script src="search.js">
-            
-    </script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
 
-    <script src="results.js">
-        
-    </script>
+<script src="init-firebase.js"></script>
 
-    <script src="login.js">
-        
-    </script>
-
-    <script src="new-account.js">
-        
-    </script>
+<script src="sign-in.js"></script>
 
 <!--Scripts End-->
-  </div>  
-       
+
 </body>
 
 </html>

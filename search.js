@@ -1,4 +1,4 @@
-cconst searchForm = document.querySelector("#search-form");
+const searchForm = document.querySelector("#search-form");
 const jobType = document.querySelector("#job-type");
 const resultSection = document.querySelector("#result-section");
 
