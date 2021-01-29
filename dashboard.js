@@ -1,8 +1,11 @@
 firebase.auth().onAuthStateChanged((user)=> {
     if(user){
-        console.log('user:', user)
 
-    }   else{
+        document.querySelector('#user')
+            .innerHTML = `${user.displayName}`
+        // console.log('user:', user)
+
+    }   else {
         // user doesn't exist
         window.location.href = 'http://index.html'
     }
