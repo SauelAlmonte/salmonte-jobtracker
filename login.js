@@ -5,6 +5,8 @@ let uiConfig = {
   signInOptions: [
     firebase.auth.EmailAuthProvider.PROVIDER_ID
   ],
+
+  signInSuccessUrl: "dashboard.html"
 }
 
 ui.start('#login-ui',uiConfig)
