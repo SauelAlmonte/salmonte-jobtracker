@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="dist/tailwind.css">
     <link rel="stylesheet" href="style.css">
     <title>Liber</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+
+    <script src="firebase-init.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
 </head>
 
 <body class="p-0 m-0 bg-cool-gray-50 antialiased">
@@ -35,7 +42,7 @@
                 <li><a class="px-4 hover:underline hover:text-teal-200" href="/">Employers</a></li>
                 <li><a class="px-4 hover:underline hover:text-teal-200" href="contact.html">Contact Us</a></li>
                 <li><a class="px-4 font-bold hover:underline hover:text-teal-200" href="login.html">Login</a></li>
-                <li><a class="px-4 font-bold hover:underline hover:text-teal-200" href="new-account.html">Resgister</a></li>
+                <li><a class="px-4 font-bold hover:underline hover:text-teal-200" href="login.html">Resgister</a></li>
             </ul>
         </div>
     </div>
@@ -227,14 +234,7 @@
     
 <!--Scripts start-->
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
-
-<script src="init-firebase.js"></script>
-
-<script src="sign-in.js"></script>
+<script src="login.js"></script>
 
 <!--Scripts End-->
 
