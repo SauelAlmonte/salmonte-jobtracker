@@ -7,6 +7,6 @@ firebase.auth().onAuthStateChanged((user)=> {
 
     }   else {
         // user doesn't exist
-        window.location.href = 'http://index.html'
+        window.location.href = 'http://localhost:5500/index.html'
     }
 })
